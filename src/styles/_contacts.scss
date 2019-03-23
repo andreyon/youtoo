@@ -1,5 +1,51 @@
+.contacts-page {
+  background-color: $logoLemon;
+  padding: 30px 0;
+
+  h3 {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .contacts-page__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  .contacts-page__container-left {
+    width: 50%;
+  }
+
+  .contacts-page__container-right {
+    width: 40%;
+
+    p {
+      padding-top: 10px;
+      padding-bottom: 45px;
+    }
+  }
+
+  .form-row {
+    padding: 5px 0;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  .btn {
+    height: 30px;
+    padding-top: 2px;
+  }
+}
+
 #map {
   width: 100%;
-  min-height: 700px;
+  min-height: 300px;
   background-color: grey;
 }
