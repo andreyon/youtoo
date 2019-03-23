@@ -1,0 +1,43 @@
+.team {
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.4) url("../../images/logo-bg45-min.png");
+  background-size: 10%;
+  background-blend-mode: lighten;
+  background-repeat: round;
+
+  .team-img {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #fff;
+
+    img {
+      width: 100%;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+  h3 {
+    padding: 10px 0;
+  }
+
+  text-align: center;
+
+  .team-row {
+    display: flex;
+
+    .team-row__item {
+      width: 20%;
+    }
+  }
+
+  .row-first {
+    justify-content: space-between;
+  }
+
+  .row-second {
+    justify-content: space-around;
+  }
+}

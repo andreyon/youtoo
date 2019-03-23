@@ -1,0 +1,35 @@
+.btn-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: .6em;
+  text-align: center;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.btn-green {
+  background: linear-gradient(lighten($logoGreen, 20%), $logoGreen) $logoGreen;
+  border-color: lighten($logoGreen, 30%) #000 $logoGreen;
+}
+
+.btn-orange {
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  border-color: #FDBE33 #000 #D77206;
+}
+
+a.btn:hover {
+  opacity: .8;
+}
