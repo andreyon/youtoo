@@ -18,6 +18,13 @@
   border-style: solid none;
   border-radius: 50px;
   transition: 0.2s;
+
+  @media screen and (max-width: 544px) {
+    width: 120px;
+    height: 30px;
+    font-size: .5em;
+    padding: .9em;
+  }
 }
 
 .btn-green {
