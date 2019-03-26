@@ -2,7 +2,7 @@
   background-color: $logoYellow;
   padding: 30px 0;
 
-  @media screen and (max-width: 544px) {
+  @media screen and (max-width: 576px) {
     padding: 10px 0;
   }
 
@@ -10,7 +10,11 @@
     font-size: 2em;
     padding-bottom: 10px;
 
-    @media screen and (max-width: 544px) {
+    @media screen and (max-width: 967px) {
+      font-size: 2.3vw;
+    }
+
+    @media screen and (max-width: 576px) {
       font-size: 1.5em;
     }
 
@@ -22,7 +26,7 @@
     margin-top: -30px;
     //padding: 30px 0;
 
-    @media screen and (max-width: 544px) {
+    @media screen and (max-width: 576px) {
       flex-direction: column;
       text-align: center;
       margin-top: 0;
@@ -38,7 +42,7 @@
   .direction-row__image {
     width: 30%;
 
-    @media screen and (max-width: 544px) {
+    @media screen and (max-width: 576px) {
       width: 100%;
       order: -1;
     }
@@ -48,8 +52,8 @@
       border-radius: 50%;
       border: 7px solid #fff;
 
-      @media screen and (max-width: 544px) {
-        width: 25%;
+      @media screen and (max-width: 576px) {
+        width: 20%;
       }
     }
   }
@@ -60,8 +64,19 @@
     justify-content: center;
     width: 60%;
 
-    @media screen and (max-width: 544px) {
+    @media screen and (max-width: 576px) {
       width: 100%;
+    }
+
+    p {
+      @media screen and (max-width: 967px) {
+        font-size: 1.8vw;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 13px;
+      }
+
     }
   }
 

@@ -1,6 +1,6 @@
 .about-page {
   /*max-height: 100vh; */
-  padding: 30px 0;
+  padding-bottom: 30px;
 
   @media screen and (max-width: 544px) {
     padding: 10px 0;
@@ -48,15 +48,20 @@
   .about-text {
     width: 40%;
     //padding: 30px 0;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.5;
     border-right: 30px solid $logoLightGreen;
 
-    @media screen and (max-width: 544px) {
+    @media screen and (max-width: 1109px) {
+      font-size: 2vw;
+    }
+
+    @media screen and (max-width: 576px) {
       width: 100%;
       border: none;
       font-size: 1em;
-      padding-top: 10px;
+      padding: 20px 0;
+      text-align: center;
     }
   }
 }

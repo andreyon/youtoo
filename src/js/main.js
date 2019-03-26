@@ -16,8 +16,8 @@
             nextArrow: '.slider-next',
             // centerPadding: '100px',//расстояние на которое вылазиет след слайд
         });
-    })
-
+    });
+/*
     $(function () {
         $('.slider').slick({
             infinite: true,
@@ -33,7 +33,7 @@
             nextArrow: '.slider-next',
             // centerPadding: '100px',//расстояние на которое вылазиет след слайд
         });
-    })
+    })*/
 
     $("a.scrollto").click(function() {
     var elementClick = $(this).attr("href")
