@@ -1,6 +1,6 @@
 ;(function ($) {
     'use strict';
-    
+
     $(function () {
         $('.main-slider').slick({
             infinite: true,
@@ -17,32 +17,43 @@
             // centerPadding: '100px',//расстояние на которое вылазиет след слайд
         });
     });
-/*
-    $(function () {
-        $('.slider').slick({
-            infinite: true,
-            slide: 'div',
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            dots: true,
-            autoplaySpeed: 2000,
-            //focusOnSelect: true,//слайдится при клике
-            // centerMode: true,
-            prevArrow: '.slider-prev',
-            nextArrow: '.slider-next',
-            // centerPadding: '100px',//расстояние на которое вылазиет след слайд
-        });
-    })*/
+    /*
+        $(function () {
+            $('.slider').slick({
+                infinite: true,
+                slide: 'div',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                dots: true,
+                autoplaySpeed: 2000,
+                //focusOnSelect: true,//слайдится при клике
+                // centerMode: true,
+                prevArrow: '.slider-prev',
+                nextArrow: '.slider-next',
+                // centerPadding: '100px',//расстояние на которое вылазиет след слайд
+            });
+        })*/
 
-    $("a.scrollto").click(function() {
-    var elementClick = $(this).attr("href")
-    var destination = $(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({
-      scrollTop: destination
-    }, 800);
-    return false;
-  });
+    $("a.scrollto").click(function () {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 800);
+        return false;
+    });
+
+    $(function () {
+        $('.nav-xs').on('click', function () {
+            $('.menu').slideToggle(200, function () {
+                if ($(this).css('display') === 'none') {
+                    $(this).removeAttr('style');
+                }
+            });
+        });
+    });
+
 })(jQuery);
 
 
