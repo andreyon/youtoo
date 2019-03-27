@@ -204,6 +204,7 @@ ul {
     font-size: 22px;
     position: absolute;
     right: 0;
+    z-index: 1000;
   }
   .main-page .header-xs .nav-xs__container .nav-xs .menu li {
     padding: 7px 5px;
