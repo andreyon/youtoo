@@ -10,6 +10,12 @@
     border-radius: 50%;
     border: 10px solid #fff;
 
+    @media screen and (max-width: 576px) {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
     img {
       width: 100%;
       transition: 0.5s;
@@ -28,8 +34,16 @@
   .team-row {
     display: flex;
 
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+
     .team-row__item {
       width: 20%;
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
     }
   }
 

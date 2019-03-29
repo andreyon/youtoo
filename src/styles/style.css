@@ -938,6 +938,13 @@ a.btn:hover {
   border-radius: 50%;
   border: 10px solid #fff;
 }
+@media screen and (max-width: 576px) {
+  .team .team-img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
 .team .team-img img {
   width: 100%;
   transition: 0.5s;
@@ -951,8 +958,18 @@ a.btn:hover {
 .team .team-row {
   display: flex;
 }
+@media screen and (max-width: 576px) {
+  .team .team-row {
+    flex-direction: column;
+  }
+}
 .team .team-row .team-row__item {
   width: 20%;
+}
+@media screen and (max-width: 576px) {
+  .team .team-row .team-row__item {
+    width: 100%;
+  }
 }
 .team .row-first {
   justify-content: space-between;
@@ -964,7 +981,10 @@ a.btn:hover {
 .schedule-page {
   padding: 30px 0;
 }
-.schedule-page table {
+.schedule-page .table-container {
+  overflow-x: auto;
+}
+.schedule-page .table-container table {
   margin: 0 auto;
   color: #666;
   text-shadow: 1px 1px 0px #fff;
@@ -974,51 +994,51 @@ a.btn:hover {
   border-radius: 3px;
   box-shadow: 0 1px 2px #d1d1d1;
 }
-.schedule-page table th {
+.schedule-page .table-container table th {
   font-weight: bold;
   padding: 21px 25px 22px 25px;
   border-top: 1px solid #fafafa;
   border-bottom: 1px solid #e0e0e0;
   background: #ededed;
 }
-.schedule-page table th:first-child {
+.schedule-page .table-container table th:first-child {
   text-align: left;
   padding-left: 20px;
 }
-.schedule-page table tr:first-child th:first-child {
+.schedule-page .table-container table tr:first-child th:first-child {
   border-top-left-radius: 3px;
 }
-.schedule-page table tr:first-child th:last-child {
+.schedule-page .table-container table tr:first-child th:last-child {
   border-top-right-radius: 3px;
 }
-.schedule-page table tr {
+.schedule-page .table-container table tr {
   text-align: center;
   padding-left: 20px;
 }
-.schedule-page table tr td:first-child {
+.schedule-page .table-container table tr td:first-child {
   text-align: left;
   padding-left: 20px;
   border-left: 0;
 }
-.schedule-page table tr td {
+.schedule-page .table-container table tr td {
   padding: 6px;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   background: #fafafa;
 }
-.schedule-page table tr:nth-child(even) td {
+.schedule-page .table-container table tr:nth-child(even) td {
   background: #f6f6f6;
   background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
   background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
 }
-.schedule-page table tr:last-child td {
+.schedule-page .table-container table tr:last-child td {
   border-bottom: 0;
 }
-.schedule-page table tr:last-child td:first-child {
+.schedule-page .table-container table tr:last-child td:first-child {
   border-bottom-left-radius: 3px;
 }
-.schedule-page table tr:last-child td:last-child {
+.schedule-page .table-container table tr:last-child td:last-child {
   border-bottom-right-radius: 3px;
 }
 .schedule-page p {
