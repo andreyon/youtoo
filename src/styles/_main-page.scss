@@ -101,6 +101,7 @@
           a {
             color: $logoGreen;
             transition: 0.5s;
+            text-transform: uppercase;
           }
         }
 
@@ -155,6 +156,7 @@
             }
 
             a {
+              text-transform: uppercase;
               color: $logoGreen;
               transition: 0.5s;
             };

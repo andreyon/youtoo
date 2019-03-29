@@ -42,7 +42,7 @@ a:hover,
 a:active {
   text-decoration: none;
   display: inline-block;
-  text-transform: uppercase;
+  color: #000;
 }
 
 ul {
@@ -167,6 +167,7 @@ ul {
 .main-page header nav ul li a {
   color: #13a89e;
   transition: 0.5s;
+  text-transform: uppercase;
 }
 .main-page header nav ul li:hover a {
   color: #18d6c9;
@@ -210,6 +211,7 @@ ul {
     padding: 7px 5px;
   }
   .main-page .header-xs .nav-xs__container .nav-xs .menu a {
+    text-transform: uppercase;
     color: #13a89e;
     transition: 0.5s;
   }
@@ -494,6 +496,15 @@ ul {
     font-size: 1.5em;
   }
 }
+.direction-page a {
+  transition: 0.5s;
+}
+.direction-page a:hover {
+  color: blueviolet;
+}
+.direction-page a:hover img {
+  border-radius: 10px;
+}
 .direction-page .direction-row {
   display: flex;
   justify-content: space-between;
@@ -523,6 +534,7 @@ ul {
   width: 60%;
   border-radius: 50%;
   border: 7px solid #fff;
+  transition: 0.5s;
 }
 @media screen and (max-width: 576px) {
   .direction-page .direction-row__image img {
@@ -563,6 +575,15 @@ ul {
     flex-direction: column;
   }
 }
+.news .news-container a {
+  transition: 0.3s;
+}
+.news .news-container a:hover {
+  color: #666666;
+}
+.news .news-container article:hover {
+  border-color: gray;
+}
 .news .news-container h2 {
   text-align: left;
 }
@@ -578,6 +599,15 @@ ul {
   background-color: #fff;
   padding: 5px;
   margin: 15px 0;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+.news .news-container article .article-date {
+  font-size: 12px;
+  text-align: right;
+}
+.news .news-container article a:hover {
+  color: #666666;
 }
 .news .news-container .news-container__articles-wrapper {
   width: 47%;
@@ -624,6 +654,7 @@ ul {
 .news .news-container__news-wrapper img {
   float: left;
   width: 30%;
+  margin-right: 10px;
 }
 @media screen and (max-width: 576px) {
   .news .news-container__news-wrapper img {
@@ -900,11 +931,11 @@ ul {
   border-width: 2px 0;
   border-style: solid none;
   border-radius: 50px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 @media screen and (max-width: 544px) {
   .btn {
-    width: 120px;
+    width: 140px;
     height: 30px;
     font-size: 0.5em;
     padding: 0.9em;
@@ -1049,6 +1080,12 @@ a.btn:hover {
   margin-left: auto;
   font-size: 0.9em;
   padding-top: 14px;
+}
+@media screen and (max-width: 544px) {
+  .schedule-page .btn {
+    font-size: 0.5em;
+    padding: 0.9em;
+  }
 }
 
 .contacts-page {

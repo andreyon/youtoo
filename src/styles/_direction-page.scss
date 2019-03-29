@@ -20,6 +20,18 @@
 
   }
 
+  a {
+    transition: 0.5s;
+  }
+
+  a:hover {
+    color: blueviolet;
+  }
+  a:hover img {
+    border-radius: 10px;
+    //transform: scale(0.8);
+  }
+
   .direction-row {
     display: flex;
     justify-content: space-between;
@@ -51,6 +63,7 @@
       width: 60%;
       border-radius: 50%;
       border: 7px solid #fff;
+      transition: 0.5s;
 
       @media screen and (max-width: 576px) {
         width: 20%;

@@ -83,5 +83,10 @@
     margin-left: auto;
     font-size: .9em;
     padding-top: 14px;
+
+    @media screen and (max-width: 544px) {
+      font-size: .5em;
+      padding: .9em;
+    }
   }
 }
