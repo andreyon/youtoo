@@ -957,7 +957,7 @@ ul {
   border-color: #FDBE33 #000 #D77206;
 }
 
-a.btn:hover {
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -1144,7 +1144,7 @@ a.btn:hover {
 }
 .contacts-page .btn {
   height: 30px;
-  padding-top: 2px;
+  padding-top: 9px;
 }
 
 #map {
