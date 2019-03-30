@@ -11,14 +11,28 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .contacts-page__container-left {
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      order: 1;
+      width: 100%;
+    }
   }
 
   .contacts-page__container-right {
     width: 40%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
 
     p {
       padding-top: 10px;
