@@ -30,7 +30,7 @@
     }
 
     h3 {
-      margin: 10px 0;
+      margin: 0 0 10px;
 
       @media screen and (max-width: 576px) {
         margin: 5px 0;
@@ -39,9 +39,10 @@
 
     article {
       background-color: #fff;
-      padding: 5px;
+      padding: 10px;
       margin: 15px 0;
       border: 1px solid transparent;
+      border-radius: 10px;
       transition: 0.5s;
 
       p {

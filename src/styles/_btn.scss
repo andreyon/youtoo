@@ -28,13 +28,17 @@
 }
 
 .btn-green {
-  background: linear-gradient(lighten($logoGreen, 20%), $logoGreen) $logoGreen;
-  border-color: lighten($logoGreen, 30%) #000 $logoGreen;
+  //background: linear-gradient(lighten($logoGreen, 20%), $logoGreen) $logoGreen;
+  background-color: #4ACCC4;
+  //border-color: lighten($logoGreen, 30%) #000 $logoGreen;
+  border-color: lighten(#4ACCC4, 30%);
 }
 
 .btn-orange {
-  background: linear-gradient(#F3AE0F, #E38916) #E38916;
-  border-color: #FDBE33 #000 #D77206;
+  //background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  background-color: #EDB33B;
+  //border-color: #FDBE33 #000 #D77206;
+  border-color: lighten(#EDB33B, 30%);
 }
 
 .btn:hover {
